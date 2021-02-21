@@ -1,6 +1,9 @@
-function Home(){
-    return(
-        <div>Hello world</div>
+function Home() {
+    return (
+        <>
+            <div>Hello world</div>
+            <a href='login'>login</a>
+        </>
     )
 }
 
