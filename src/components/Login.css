@@ -1,6 +1,7 @@
 body {
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
+    background-image: url("../assets/images/loginBackground.jpg");
 }
 
 .form-label{
@@ -13,7 +14,7 @@ body {
 }
 
 form{
-    padding-top: 25%;
+    padding-top: 15%;
 }
 
 img {
