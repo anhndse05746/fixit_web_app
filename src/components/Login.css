@@ -1,7 +1,7 @@
 body {
     /* overflow: hidden; */
     /* position: relative; */
-    background-image: url("../assets/images/loginBackground.jpg");
+    background-color: #E8E8E8;
 }
 
 .form-label{

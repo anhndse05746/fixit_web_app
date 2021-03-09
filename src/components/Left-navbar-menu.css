@@ -1,0 +1,14 @@
+.sideNav{
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 0.5px 0.5px 1px 1px #888888; */
+}
+
+.nav-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: black !important;
+}

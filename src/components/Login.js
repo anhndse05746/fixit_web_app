@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Col, Row, Button, Form } from 'react-bootstrap';
+import { Container, Button, Form } from 'react-bootstrap';
 import './Login.css';
 
 function LoginPage() {
     return (
         <>
-            <Container>
+            <Container className="login">
                 <Form>
                     <Form.Label className="text-muted">
                         Welcome back

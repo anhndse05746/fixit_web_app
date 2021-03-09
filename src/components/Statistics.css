@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+}
+
+.staticIcon{
+    background-color: #e0c1ff;
+    color: #887fe4;
+    height: 45px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.users{
+    background-color: #baf5fc;
+    color: #00E5EE;
+}
+
+.workers{
+    color: #e75757;
+    background-color: #e9cdca;
+}
+
+.revenue{
+    background-color: rgb(201, 236, 201);
+    color: rgb(0, 252, 13);
+}
+
+.staticRow{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.svg-inline--fa.fa-w-16, .svg-inline--fa.fa-w-20, .svg-inline--fa.fa-w-9, .svg-inline--fa.fa-w-12 {
+    width: 45px;
+}

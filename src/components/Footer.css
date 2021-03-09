@@ -1,0 +1,13 @@
+body{
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    /* box-shadow: 2px 2px 2px 2px #888888; */
+}
