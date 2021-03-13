@@ -1,9 +1,9 @@
-import { Col, Container, Row } from 'react-bootstrap';
-import Header from './Header';
-import LeftNav from './Left-navbar-menu';
-import Statistics from './Statistics';
-import Chart from './Chart';
-import Footer from './Footer';
+import { Col, Row } from 'react-bootstrap';
+import Header from '../components/Header'
+import LeftNav from '../components/Left-navbar-menu';
+import Statistics from '../components/Statistics';
+import Chart from '../components/Chart';
+import Footer from '../components/Footer';
 
 function Home() {
     return (
