@@ -4,8 +4,18 @@ import LeftNav from '../components/Left-navbar-menu';
 import Statistics from '../components/Statistics';
 import Chart from '../components/Chart';
 import Footer from '../components/Footer';
+import { Redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Home() {
+    const userStatus = useSelector(state => state.user);
+
+    console.log('home: ',userStatus);
+
+    if (userStatus.isLogedIn == false) {
+        return <Redirect to="/login" />;
+    }
+
     return (
         <>
             <Header />

@@ -1,7 +1,7 @@
 
-// export const login = (status) => {
-//     return{
-//         type: 'LOGED_IN',
-//         payload: status,
-//     }
-// }
+export const userLogin = (status) => {
+    return{
+        type: 'LOGIN',
+        payload: status,
+    }
+}

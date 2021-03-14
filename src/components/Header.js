@@ -1,6 +1,7 @@
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, InputGroup, FormControl } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 function Header() {
 
