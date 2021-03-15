@@ -1,27 +1,28 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { userLogin } from '../actions/user';
 import { Redirect } from 'react-router-dom';
+import { login } from '../store/login';
 import './Login.css';
 
 function LoginPage() {
-    const userStatus = useSelector(state => state.user);
+    const userStatus = useSelector(state => state.login);
     const dispatch = useDispatch();
 
-    const handleLogin = () => {
-        const action = userLogin(true);
-        dispatch(action);
-    };
-
-    console.log("login: ", userStatus);
-
-    if (userStatus == true) {
+    if (userStatus.isLogin == true) {
         return <Redirect to="/" />;
     }
 
+    const handleLogin = () => {
+        dispatch(login(true));
+    };
+
+    console.log('login state: ', login(true));
+    console.log("login: ", userStatus);
+
     return (
         <>
+            <p>aaaaa: {userStatus.isLogin.toString()}</p>
             <Container className="login">
                 <Form onSubmit={handleLogin}>
                     <Form.Label className="text-muted">
