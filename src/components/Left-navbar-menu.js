@@ -6,7 +6,7 @@ function LeftNav() {
     return (
         <Nav variant="pills" className="flex-column sideNav">
             <Nav.Item>
-                <Nav.Link eventKey="1" href="#/home">
+                <Nav.Link eventKey="1" href="/">
                     <FontAwesomeIcon icon="chart-line" /> Dashboard
                 </Nav.Link>
             </Nav.Item>
@@ -21,7 +21,7 @@ function LeftNav() {
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="4" href="#">
+                <Nav.Link eventKey="4" href="/major">
                     <FontAwesomeIcon icon="clipboard-list" /> Majors
                 </Nav.Link>
             </Nav.Item>

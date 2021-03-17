@@ -22,7 +22,6 @@ function LoginPage() {
 
     return (
         <>
-            <p>aaaaa: {userStatus.isLogin.toString()}</p>
             <Container className="login">
                 <Form onSubmit={handleLogin}>
                     <Form.Label className="text-muted">
