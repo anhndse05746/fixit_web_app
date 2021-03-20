@@ -1,20 +1,21 @@
 import { Col, Row } from 'react-bootstrap';
-import Header from '../components/Header'
-import LeftNav from '../components/Left-navbar-menu';
-import Statistics from '../components/Statistics';
-import Chart from '../components/Chart';
-import Footer from '../components/Footer';
+import Header from './Header'
+import LeftNav from './Left-navbar-menu';
+import Statistics from './Statistics';
+import Chart from './Chart';
+import Footer from './Footer';
 import { Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 function Home() {
     const userStatus = useSelector(state => state.login);
+    const { isLogin } = userStatus;
 
-    console.log('home: ',userStatus);
+    console.log();
 
-    if (userStatus == false) {
-        return <Redirect to="/login" />;
-    }
+    if (isLogin == false) {
+        return <Redirect to="/login" />
+    };
 
     return (
         <>
@@ -22,11 +23,11 @@ function Home() {
             <Row>
                 <Col lg={3}>
                     <LeftNav />
-                    <Footer/>
+                    <Footer />
                 </Col>
                 <Col lg={9}>
                     <Statistics />
-                    <Chart 
+                    <Chart
                         name="user"
                     />
                     <Chart />

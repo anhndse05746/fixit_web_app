@@ -10,7 +10,10 @@ import { faSearch,
     faUser, 
     faWrench, 
     faDollarSign,
-    faCheck
+    faCheck,
+    faEllipsisH,
+    faPlusCircle
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSearch, faChartLine, faUsers, faTools, faClipboardList, faPen, faTasks, faBan, faUser, faWrench, faDollarSign, faCheck)
+library.add(faSearch, faChartLine, faUsers, faTools, faClipboardList, faPen, faTasks, faBan, faUser, faWrench, faDollarSign, faCheck, 
+    faEllipsisH, faPlusCircle)

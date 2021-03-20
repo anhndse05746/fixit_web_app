@@ -1,0 +1,20 @@
+.action-col{
+    width: 200px;
+}
+
+.add-major-button{
+    float: right;
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 15px;
+}
+
+.major{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.major-add{
+    width: 16px !important;
+}
