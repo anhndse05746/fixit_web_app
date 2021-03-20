@@ -9,12 +9,13 @@ import { useSelector } from 'react-redux';
 
 function Home() {
     const userStatus = useSelector(state => state.login);
+    const { isLogin } = userStatus;
 
-    console.log('home: ',userStatus);
+    console.log();
 
-    if (userStatus.isLogin == false) {
-        return <Redirect to="/login" />;
-    }
+    if (isLogin == false) {
+        return <Redirect to="/login" />
+    };
 
     return (
         <>
@@ -22,11 +23,11 @@ function Home() {
             <Row>
                 <Col lg={3}>
                     <LeftNav />
-                    <Footer/>
+                    <Footer />
                 </Col>
                 <Col lg={9}>
                     <Statistics />
-                    <Chart 
+                    <Chart
                         name="user"
                     />
                     <Chart />
